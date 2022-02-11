@@ -11,5 +11,12 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'echo "########"'
+        sh 'sh ./scripts/test.sh'
+      }
+    }
+
   }
 }
