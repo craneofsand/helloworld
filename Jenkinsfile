@@ -7,6 +7,7 @@ pipeline {
       }
       steps {
         sh 'echo "Build Stage"'
+        sh 'sh ./scripts/build.sh'
       }
     }
 
